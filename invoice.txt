@@ -1,0 +1,19 @@
+Order number: 123
+Customer name: Gabriele James
+Email: g.tealejames@hotmail.com
+Phone number: 731112234
+Location: Cape Town
+
+You have ordered the following from Prashad in Cape Town: 
+
+2 X Korma (R11.0) 
+Special instructions: none
+
+Total: R22.0
+
+Miranda Metcalfe  is nearest to the restaurant and so he will be delivering your order to you at: 
+
+3 Trill Road
+Observatory 
+
+If you need to contact the restaurant, their number is 1234456789.
