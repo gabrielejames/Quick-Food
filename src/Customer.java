@@ -24,5 +24,15 @@ public class Customer {
         System.out.println("Location: " + location);
         System.out.println("Contact email: " + contactEmail);
     }
+
+	@Override
+	public String toString() {
+		return "Customer /n Order Number=" + orderNumber + ", Name=" + name + ", contactNumber=" + contactNumber
+				+ ", Address=" + address + ", Suburb=" + suburb + ", Location=" + location + ", Contact Email="
+				+ contactEmail + ", meals=" + meals + ", Order Instructions=" + orderInstructions + ", Total=" + total
+				+ "]";
+	}
+    
+    
     
 }
