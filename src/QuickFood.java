@@ -73,7 +73,13 @@ class QuickFood {
 
       System.out.println("Enter customer contact number");
       customer.contactNumber = Integer.parseInt(input.nextLine());
-
+      
+      if (!(validateContactNumber(customer.contactNumber))){
+    	  System.out.println("Invalid contact number. Please re-enter customer contact number:");
+          customer.contactNumber = Integer.parseInt(input.nextLine());
+          
+      }
+      
       System.out.println("Enter customer contact email");
       customer.contactEmail = input.nextLine();
 
@@ -118,6 +124,12 @@ class QuickFood {
     System.out.println("Enter restaurant contact number");
     restaurant.contactNumber = input.nextInt();
     input.nextLine();
+    
+    if (!(validateContactNumber(restaurant.contactNumber))){
+  	  System.out.println("Invalid contact number. Please re-enter customer contact number:");
+        restaurant.contactNumber = Integer.parseInt(input.nextLine());
+        
+    }
 
     //Allows the user to enter meals ordered by the customer, as well as the price and quantity
 
@@ -436,6 +448,17 @@ class QuickFood {
       // TODO Auto-generated catch block;
       e.printStackTrace();
     }
+  }
+  
+  public static boolean validateContactNumber(int contactNumber) {
+	int lengthOfNumber = String.valueOf(contactNumber).length();
+	
+	if (lengthOfNumber == 10) {
+	  return true;
+	}
+	else {
+		return false;
+	}
   }
 
 }
